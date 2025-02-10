@@ -7,7 +7,7 @@ go run .
 ```
 Server will start up on 8080.
  
-###GET-call on 
+GET-call on 
 ```
 localhost:8080/events
 ```
