@@ -14,6 +14,30 @@ localhost:8080/events
 with the following as body:
 ```
 {
-    "artist": "Bruno Mars"
+    "artist": "Coldplay"
+}
+```
+GET-call on 
+```
+localhost:8080/events-by-country-date
+```
+with the following as body:
+```
+{
+    "artist": "Coldplay",
+    "country": "IN",
+    "start": "XXXX-XX-XX",
+    "end": "XXXX-XX-XX"
+}
+```
+GET-call on 
+```
+localhost:8080/events-by-country
+```
+with the following as body:
+```
+{
+    "artist": "Coldplay",
+    "country": "IN"
 }
 ```
