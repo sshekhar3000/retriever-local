@@ -21,3 +21,15 @@ type Event struct {
 type ArtistRequest struct {
     Artist string `json:"artist"`
 }
+
+type ArtistCountryRequest struct {
+    Artist  string `json:"artist"`
+    Country string `json:"country"`
+}
+
+type ArtistCountryDateRequest struct {
+    Artist  string `json:"artist"`
+    Country string `json:"country"`
+    Start   string `json:"start"`
+    End     string `json:"end"`
+}
