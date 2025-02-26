@@ -11,7 +11,7 @@ import (
 func main() {
 	InitDB()
     defer Close()
-
+    http.HandleFunc("/", showfrontPage)
     http.HandleFunc("/events", eventsHandler)
     http.HandleFunc("/events-by-country-date", eventsByCountryDateHandler)
     http.HandleFunc("/events-by-country", eventsByCountry)

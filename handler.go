@@ -4,6 +4,10 @@ import (
 	"net/http"
 )
 
+func showfrontPage(w http.ResponseWriter, r *http.Request){
+
+    w.Write([]byte("Welcome to the artist events API"))
+}
 func eventsHandler(w http.ResponseWriter, r *http.Request) {
     var req ArtistRequest
     if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
